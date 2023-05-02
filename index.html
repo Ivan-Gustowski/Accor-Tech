@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <!-- Icono -->
+    <script src="https://kit.fontawesome.com/226f3fbe38.js" crossorigin="anonymous"></script>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Lato:wght@700;1,400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagenes/logo.png">
+    <title>Accor Tech</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="container-fluid">
+      <!-- Header Alto -->
+        <div class="row">
+            <p>ANUNCIO</p>
+        </div>
+        <!-- Header Medio -->
+        <div class="row headermedio align-items-center">
+            <div class="col-lg-4 col-6 logo justify-content-center">
+                <a href="index.html"><img src="./imagenes/logo.png" alt="logo de la empresa" height="65px" width="95px"></a>            
+            </div>
+            <div class="col-lg-4 col-6">
+                <form class="d-flex input-icon" role="search">
+                    <input class="form-control input-icono" type="search" placeholder="Buscar" aria-label="Search">
+                    <!-- <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #64113c;"></i></button> -->
+                </form>
+            </div>
+            <div class="col-lg-4 accesoheader">
+                <div>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="cuenta">
+                    <a href="./productos/cuenta.html"><i class="fa-solid fa-user-tie"></i></a>
+                </div>
+                <div>
+                    <a href="./productos/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Header Bajo -->
+        <nav class="navbar navbar-expand-lg navprincipal">
+            <div class="container-fluid">
+              <button class="navbar-toggler navcat" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span>Categorias</span>
+              </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navegacion">
+                    <li class="nav-item dropdown nav-items">
+                        <a class="nav-link navcat" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-bars-staggered" style="color: #64113c;"></i> Productos</a>
+                        <ul class="dropdown-menu navegacion">
+                          <li><a class="dropdown-item naveg naveg-item" href="#">Auriculares</a></li>
+                          <li><a class="dropdown-item naveg naveg-item" href="./productos/parlantes.html">Parlantes</a></li>
+                          <li><a class="dropdown-item naveg naveg-item" href="#">Smartwatch</a></li>
+                          <li><a class="dropdown-item naveg naveg-item" href="#">Cables y <br> Cargadores</a></li>
+                          <li><a class="dropdown-item naveg naveg-item" href="#">Streaming</a></li>
+                          <li><a class="dropdown-item naveg naveg-item" href="#">Oficina</a></li>
+                          <li><a class="dropdown-item naveg naveg-item" href="#">Luces</a></li>
+                          <li><a class="dropdown-item naveg naveg-item" href="#">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item naveg">
+                      <a class="nav-link naveg" href="./productos/tecnico.html">Servicio Tecnico</a>
+                    </li>
+                    <li class="nav-item naveg">
+                      <a class="nav-link naveg" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item naveg">
+                      <a class="nav-link naveg" href="#">Novedades</a>
+                    </li>
+                    <li class="nav-item naveg">
+                      <a class="nav-link naveg" href="#">Accesorios</a>
+                    </li>
+                    <li class="nav-item naveg">
+                      <a class="nav-link naveg" href="#">Auriculares</a>
+                    </li>
+                </ul>
+             </div>
+            </div>
+        </nav>     
+    </header>
+    
+    <!-- CARRUSEL INFORMATIVO -->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: #64113c;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: #64113c;"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: #64113c;"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active trans">
+                <img src="./imagenes/BANNER SMART (1) (1).jpg" class="d-block w-100" alt="Imagen informativa" height="400px">
+              </div>
+              <div class="carousel-item trans">
+                <img src="./imagenes/FUNDASJHGH.jpg" class="d-block w-100" alt="Imagen informativa" height="400px">
+              </div>
+              <div class="carousel-item trans">
+                <img src="./imagenes/tablethu (1).jpg" class="d-block w-100" alt="Imagen informativa" height="400px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="medios-de-pago">
+            <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.24/img/home/visa___2c327b0df9ac8fbc50f3066d6b621639.svg" alt="medios de pago" width="auto" height="auto">
+            <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.24/img/home/american-express___c3483a8cf092e7d3b062824ee0da9b0f.svg" alt="medios de pago" width="auto" height="auto">
+            <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.24/img/home/naranja___b3c6aaa2cd9bb6945315cf43dad4409f.png" alt="medios de pago" width="auto" height="auto">
+            <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.24/img/home/mastercard___6f0d725fbda816c08c35d43249081f90.png" alt="medios de pago" width="auto" height="auto">
+            <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.24/img/home/ahora-12___02c68ef5be40cf13e44cf010039af61a.svg" alt="medios de pago" width="auto" height="auto">
+            <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.24/img/home/ahora-18___b0b94ed3dbec7fb89b2f954cb0e89298.svg" alt="medios de pago" width="auto" height="auto">
+          </div>
+    </section>
+
+    <!-- MAIN -->
+    <main>
+      <div class="main-productos">
+        <h1>Productos</h1>
+      </div>
+      <!-- Productos -->
+      <div id="carouselExampleAutoplaying" class="carousel slide carrusel-main" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active trans">
+            <div class="cards-wrapper">
+              <div>
+                <a href=""><img src="./imagenes/auricularess.jpg" alt="Producto" height="200px" width="200px"></a>
+                <h2>Auriculares</h2>
+              </div>
+              <div>
+                <a href="./productos/parlantes.html"><img src="./imagenes/parlante.jpg" alt="Producto" height="200px" width="200px"></a>
+                <h2>Parlantes</h2>
+              </div>
+              <div>
+                <a href=""><img src="./imagenes/smartwatc.jpg" alt="Producto" height="200px" width="200px"></a>
+                <h2>Smartwatch</h2>
+              </div>
+              <div>
+                <a href=""><img src="./imagenes/cables y cargadores.png" alt="Producto" height="200px" width="200px"></a>
+                <h2>Cables</h2>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item trans">
+            <div class="cards-wrapper">
+              <div>
+                <a href=""><img src="./imagenes/streaming.webp" alt="Producto" height="200px" width="200px"></a>
+                <h2>Streaming</h2>
+              </div>
+              <div>
+                <a href=""><img src="./imagenes/mouse y teclado.jpg" alt="Producto" height="200px" width="200px"></a>
+                <h2>Oficina</h2>
+              </div>
+              <div>
+                <a href=""><img src="./imagenes/foco led.jpg" alt="Producto" height="200px" width="200px"></a>
+                <h2>Luces</h2>
+              </div>
+              <div>
+                <a href=""><img src="./imagenes/joystick.jpg" alt="Producto" height="200px" width="200px"></a>
+                <h2>Accesorios</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev traslado" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="traslado"><i class="fa-solid fa-chevron-left" style="color: #64113c;"></i></span>
+        </button>
+        <button class="carousel-control-next traslado" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="traslado"><i class="fa-solid fa-chevron-right" style="color: #64113c;"></i></span>
+        </button>
+      </div>
+
+      <!-- MARCAS -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 marcas">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.13/img/home/mi_logo___578f632c729471d2777f4cd27a9b8a9f.svg" alt="marca" width="auto" height="auto">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex.file-manager-graphql/images/c96e4eee-e29f-4b24-a7c2-8370f0e7c8a3___b967f374dba9000579d0b348ab48fd59.png" alt="marca" width="auto" height="auto">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.13/img/home/redragon___8350328eb24e8208e0ec197786171863.svg" alt="marca" width="auto" height="auto">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.13/img/home/colorful___7fb0a5e720a9e2ae61e1b96b32cc061a.svg" alt="marca" width="auto" height="auto">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.13/img/home/xp-pen_logo___f5c23398ac2e64d129dc7720337a7e55.svg" alt="marca" width="auto" height="auto">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex.file-manager-graphql/images/514c24ae-6195-4cf5-b291-d227892b3e95___82d610e0de6647f9b0011d69176d9e0e.png" alt="marca" width="auto" height="auto">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.13/img/home/jbl_logo___038192e93bb238ad8d3918a99e90c7ad.svg" alt="marca" width="auto" height="auto">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex/assets-builder/mundofixar.shipin/2.0.13/img/home/amd_logo___7befb20c1815d139adcdb6d1fea3059b.svg" alt="marca" width="auto" height="auto">
+              <img src="https://mundofixar.vtexassets.com/assets/vtex.file-manager-graphql/images/d58055d9-3076-4d93-b5d1-28b8900209c5___ccf5c4d57881b48ce4eb1df82e70db81.png" alt="marca" width="auto" height="auto">
+          </div>
+        </div>
+      </div>
+
+      <!-- Los mas vendidos -->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 vendidos">
+              <h2>Los más vendidos</h2>
+            </div>
+          </div>
+          <div class="row productos">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item">
+              <figure>
+                <a href="#"><img src="./imagenes/parlan.jpg" alt="Producto"></a>
+              </figure>
+              <div class="info-product">
+                <h2>Parlante JBL </h2>
+                <hr class="divider-info">
+                <p class="price">$50.000</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item">
+              <figure>
+                <a href="#"><img src="./imagenes/parlan.jpg" alt="Producto"></a>
+              </figure>
+              <div class="info-product">
+                <h2>Parlante JBL </h2>
+                <hr class="divider-info">
+                <p class="price">$50.000</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item">
+              <figure>
+                <a href="#"><img src="./imagenes/parlan.jpg" alt="Producto"></a>
+              </figure>
+              <div class="info-product">
+                <h2>Parlante JBL </h2>
+                <hr class="divider-info">
+                <p class="price">$50.000</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item">
+              <figure>
+                <a href="#"><img src="./imagenes/parlan.jpg" alt="Producto"></a>
+              </figure>
+              <div class="info-product">
+                <h2>Parlante JBL </h2>
+                <hr class="divider-info">
+                <p class="price">$50.000</p>
+              </div>
+            </div>
+          <div class="row productos">  
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item novedades-dos">
+              <figure>
+                <a href="#"><img src="./imagenes/parlan.jpg" alt="Producto"></a>
+              </figure>
+              <div class="info-product">
+                <h2>Parlante JBL </h2>
+                <hr class="divider-info">
+                <p class="price">$50.000</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item novedades-dos">
+              <figure>
+                <a href="#"><img src="./imagenes/parlan.jpg" alt="Producto"></a>
+              </figure>
+              <div class="info-product">
+                <h2>Parlante JBL </h2>
+                <hr class="divider-info">
+                <p class="price">$50.000</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item novedades-dos">
+              <figure>
+                <a href="#"><img src="./imagenes/parlan.jpg" alt="Producto"></a>
+              </figure>
+              <div class="info-product">
+                <h2>Parlante JBL </h2>
+                <hr class="divider-info">
+                <p class="price">$50.000</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item novedades-dos">
+              <figure>
+                <a href="#"><img src="./imagenes/parlan.jpg" alt="Producto"></a>
+              </figure>
+              <div class="info-product">
+                <h2>Parlante JBL </h2>
+                <hr class="divider-info">
+                <p class="price">$50.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagenes informativas -->
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-6 img-informativa">
+            <img src="data:image/jpeg;base64,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" alt="Imagen informativa">
+          </div>
+          <div class="col-6 img-informativa">
+            <img src="https://nextcell.com.ar/wp-content/uploads/2023/04/Xiaomi-10W-Wireless-Power-Bank-10000-1-250x188.webp" alt="Imagen informativa">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SUCURSAL -->
+    <section class="container-fluid">
+      <div class="row section-mapa">
+        <div class="col-lg-5 col-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.3947419954575!2d-64.22451742493874!3d-31.43079799694713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a37b04f83821%3A0xf20e6243f73c5ac4!2sAccor%20Tech!5e0!3m2!1ses-419!2sar!4v1682172140117!5m2!1ses-419!2sar" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-lg-5 col-12 info-mapa">
+          <h2>Visitanos en<br>nuestro local</h2>
+          <h5 class="info-horarios">Lunes a sabado</h5>
+          <h5>10:00 a 13:00h</h5>
+          <h5>17:00 a 20:00h</h5>
+          <h5 class="info-horarios">Av. Fuerza Aerea 2552</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLATTER -->
+    <section class="container-fluid section-newslatter">
+      <div class="row row-newslatter">
+        <div class="col-lg-12">
+          <div class=>
+            <img src="https://www.liveaudiovisual.es/wp-content/uploads/2017/10/fondo-web-newsletter-oscuro-2.jpg" alt="newslatter" width="100%" height="auto">
+          </div>
+          <div class="info-newslatter">
+            <nav class="navbar body-tertiary newslatter">
+              <h2><span>Suscribite a nuestro</span> NEWSLATTER</h2>
+              <div class="container-fluid">
+                <form class="d-flex form-newslatter" role="search">
+                  <input class="form-control input-newslatter" type="search" placeholder="E-mail">
+                  <button class="btn boton-newslatter" type="submit">Suscribite</button>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 footer-general">
+          <ul class="footer-primero">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="./productos/tecnico.html">Servicio Tecnico</a></li>
+            <li><a href="#">Novedades</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-6 footer-general">
+          <ul class="footer-segundo">
+            <li><a href="#"><i class="fa-brands fa-instagram" style="color: #64113c;"></i> Accor Tech</a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp" style="color: #64113c;"></i> Accor Tech</a></li>
+            <li><a href="#"><i class="fa-regular fa-envelope" style="color: #64113c;"></i> accortech@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12 footer-general footer-tercero">
+          <div>
+            <div>
+              <img src="./imagenes/logo.png" alt="" height="60px" width="90px">
+            </div>
+            <h5>Informacion Legal</h5>
+            <h5>Copyright</h5>
+            <h5>Derechos Reservados</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
