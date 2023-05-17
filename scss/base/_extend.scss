@@ -1,0 +1,35 @@
+%flexuno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexdos {
+    display: flex;
+    justify-content: center;
+}
+
+%flextres {
+    display: flex;
+    align-items: center;
+}
+
+%flexcuatro {
+    display: flex;
+    justify-content: space-around;
+}
+
+%flexcinco {
+    display: flex;
+    flex-direction: column;
+}
+
+%flexseis {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flexsiete {
+    display: flex;
+    justify-content: end;
+}

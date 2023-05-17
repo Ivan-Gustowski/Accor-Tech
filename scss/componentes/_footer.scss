@@ -1,0 +1,66 @@
+footer {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding: 10px;
+    background-color: $co;
+    .footer-general {
+        @extend %flexuno;
+        flex-direction: column;
+        .footer-primero {
+            li {
+                list-style: none;
+                padding: 10px;
+                @extend %flextres;
+                a {
+                    @extend %flextres;
+                    gap: 10px;
+                    color: $co-prin;
+                    text-decoration: none;
+                    &:hover { 
+                        border-bottom-style: solid;
+                        color: $co-prin; 
+                    }
+                }
+            }
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
+        }
+        .footer-segundo {
+            li {
+                list-style: none;
+                padding: 10px;
+                @extend %flextres;
+                a {
+                    @extend %flextres;
+                    gap: 10px;
+                    color: $co-prin;
+                    text-decoration: none;
+                    i {
+                        font-size: xx-large;
+                    }
+                }
+            }
+            @media screen and (max-width: 576px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-inline-start: 0;
+            }
+        }
+    }
+    .footer-tercero div {
+        @extend %flexuno;
+        flex-direction: column;
+        div {
+            margin-bottom: 20px;
+            img {
+                height: 60px;
+                width: 90px;
+            }
+        }
+        h5 {
+            font-size: small;
+        }
+    }
+}

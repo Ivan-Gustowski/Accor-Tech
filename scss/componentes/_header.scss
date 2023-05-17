@@ -1,0 +1,66 @@
+header {
+    background-color: $co;
+    div p {
+        @extend %flexdos;
+        background-color: $co-prin;
+        margin-bottom: 0;
+        color: $co;
+    }
+    .headermedio {
+        padding: 20px;
+        .logo {
+            padding-left: 5%;
+            img {
+                height: 65px;
+                width: 95px;
+            }
+        }
+        .input-icono {
+            background-image: url(../imagenes/lupa.svg);
+            background-repeat: no-repeat;
+            background-position: 6px center;
+            background-size: 20px;
+            padding-left: 35px;
+            background-color: $bc-co;
+        }
+        .accesoheader {
+            @extend %flexuno;
+            font-size: x-large;
+            .cuenta {
+                padding: 0 29.5px;
+                margin: 0 29.5px;
+                border: 1px solid $co-prin;
+                border-top: 0;
+                border-bottom: 0;
+            }
+            i {
+                color: $co-prin;
+            }
+        }
+    }
+    .navprincipal {
+        border-top: map-get($navp, bord);
+        border-bottom: map-get($navp, bord);
+        padding: map-get($navp, pad);
+        .navcat {
+            font-weight: bold;
+            color: $co-prin;
+            border: none;
+        }
+        div .navegacion {
+            justify-content: space-around;
+            width: 100%;
+            .naveg {
+                color: $co-prin;
+                padding-bottom: 0;
+                &:hover { 
+                    border-bottom-style: solid;
+                    color: $co-prin; 
+                }
+            }
+            .naveg-item {
+                padding-bottom: 8px;
+            }
+        }
+    }
+}

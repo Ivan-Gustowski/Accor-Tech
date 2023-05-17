@@ -1,0 +1,273 @@
+// CARRUSEL
+section {
+    .trans {
+        transition: 1s;
+        img {
+            height: 400px;
+            @media (max-width: 576px) {
+                height: auto;
+            }
+        }
+    }
+    .medios-de-pago {
+        @extend %flexcuatro;
+        background: $co;
+        padding: 3px;
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+}    
+
+// PORTADA
+
+.port {
+    width: 100%;
+    height: auto;
+}
+
+// CONTACTO
+
+.row-contacto {
+    ul {
+        @extend %flexdos;
+        margin: 20px 0 50px 0;
+        &:hover {
+            font-weight: bold;
+        }
+        li {
+            list-style: none;
+            a {
+                @extend %flextres;
+                text-decoration: none;
+                color: $co-prin;
+                font-size: x-large;
+            }
+            i {
+                font-size: xx-large;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+// PRODUCTOS
+
+.main-productos {
+    @extend %flexdos;
+    margin: 40px 0 30px 0;
+    color: $co-prin;
+    h1 {
+        font-weight: bold;
+    }
+}
+
+.carrusel-main {
+    margin: 30px 0 80px 0;
+    .trans {
+        transition: 1s;
+        .cards-wrapper {
+            @extend %flexcuatro;
+            div {
+                @extend %flexuno;
+                flex-direction: column;
+                gap: 15px;
+                img {
+                    border-radius: 50%;
+                    height: 200px;
+                    width: 200px;
+                    &:hover {
+                        border: 2px solid $co-prin;
+                    }    
+                    @media screen and (max-width: 576px) {
+                        height: auto;
+                    }                
+                }
+                h2 {
+                    font-size: large;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .traslado {
+        width: 50px;
+        color: $co-prin;
+        font-size: xx-large;
+        font-weight: bold;
+        @media screen and (max-width: 576px) {
+            margin-bottom: 15px;
+        }
+        i {
+            color: $co-prin;
+        }
+    }
+}    
+
+// MARCAS
+
+.marcas {
+    @extend %flexcuatro;
+    margin: 30px 0 30px 0;
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+    img {
+        width: auto;
+        height: auto;
+    }
+}
+
+// LOS MAS VENDIDOS
+
+section {
+    .vendidos h2 {
+        @extend %flexdos;
+        font-weight: bold;
+        margin-top: 70px;
+    }
+    .novedades-dos {
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+    }
+}
+
+// TARJETAS
+
+.productos {
+    @extend %flexcuatro;
+    .item{
+        width: 270px;
+        border-radius: 0 0 10px 10px;
+        margin: 10px;
+        padding: 0;
+        border: none;
+        &:hover{
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+        } 
+        figure{
+            overflow: hidden;
+            img{
+                width: map-get($img-tar, wid);
+                height: map-get($img-tar, hei);
+                transition: map-get($img-tar, anim);
+            }
+            &:hover img{
+                transform: scale(1.1);
+            }
+        }
+        .info-product{
+            @extend %flexcinco;
+            gap: 10px;
+            h2 {
+                padding-inline-start: 10px;
+                font-size: x-large;
+                font-weight: lighter;
+                margin: 0;
+            }
+            .divider-info {
+                margin: 5px;
+            }
+            .price{
+                padding-inline-start: 10px;
+                font-size: large;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+// IMAGENES INFORMATIVAS
+
+.img-informativa {
+    @extend %flexcuatro;
+    margin: 50px 0 80px 0;
+    img {
+        width: 65%;
+        height: 280px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+    }
+}
+
+// SUCURSAL
+
+.section-mapa {
+    @extend %flexcuatro;
+    align-items: center;
+    margin-bottom: 50px;
+    div iframe {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
+        width: 100%;
+        height: 400px;
+    }
+    .info-mapa {
+        @extend %flextres;
+        flex-direction: column;
+        margin: 15px;
+        h2 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .info-horarios {
+            font-weight: 600;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        margin-top: 0;
+    }
+}
+
+// NEWSLATTER
+
+.section-newslatter {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .info-newslatter {
+        @extend %flexcinco;
+        width: 100%;
+        .newslatter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @extend %flexdos;
+            gap: 10px;
+            width: 40%;
+            h2 {
+                font-size: large;
+                font-weight: bold;
+                color: #c99a9a;
+                span {
+                    @media screen and (max-width: 576px) {
+                        display: none;
+                    }
+                }
+            }
+            .form-newslatter {
+                width: 100%;
+                .input-newslatter {
+                    background: #c99a9a48;
+                    @media screen and (max-width: 576px) {
+                        width: 200px;
+                    }
+                }
+                .boton-newslatter {
+                    color: #c99a9a;
+                }
+                @media screen and (max-width: 576px) {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

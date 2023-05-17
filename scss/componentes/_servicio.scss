@@ -1,0 +1,54 @@
+.servtecnico {
+    @extend %flexcuatro;
+    .figtecnico {
+        @extend %flexcuatro;
+        img {
+            width: 150px;
+            height: 170px;
+        }
+    }
+    .h2tecnico {
+        @extend %flexdos;
+        h2 {
+            color: $co-prin;
+            font-size: x-large;
+        }
+        @media screen and (max-width: 576px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.service {
+    @extend %flexcuatro;
+    margin-top: 30px;
+    .figtecnicos{
+        @extend %flexcuatro;
+        img {
+            width: 100%;
+        }
+    }
+    .h2tecnicos {
+        @extend %flexuno;
+        h2 {
+            color: $co-prin;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+    }
+}
+
+.boton-tecnico {
+    @extend %flexdos;
+    .boton-servicio {
+        margin: 30px;
+        font-size: xx-large;
+        font-weight: bold;
+        background-color: $co-prin;
+        color: $bc-co;
+        padding: 20px 100px 20px 100px;
+        &:hover {
+            background-color: $bt-co;
+        }
+    }
+}

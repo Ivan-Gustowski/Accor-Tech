@@ -1,0 +1,61 @@
+.row-cuenta {
+    @extend %flexdos;
+    background-color: $co;
+    margin: 25px 40px 25px 40px;
+    padding: 20px;
+    border: 1px solid $cuen-co;
+    .col-cuenta {
+        @extend %flexseis;
+        a {
+            text-decoration: none;
+            color: $co-prin;
+            font-size: larger;
+            &:hover { 
+                font-weight: bold; 
+            }
+        }
+        .cuenta-activo {
+            border-bottom-style: solid;
+            color: $co-prin;
+        }
+        .none-cuenta {
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.cont-cuenta {
+    background-color: $co;
+    border: 1px solid $cuen-co;
+    .jj {
+        @extend %flexcuatro;
+        padding: 15px;
+        div h2 {
+            font-size: x-large;
+            font-weight: bold;
+        }
+        div h3 {
+            font-size: large;
+        }
+        div .h3ec {
+            @media screen and (max-width: 576px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .boton-cuenta {
+        @extend %flexsiete;
+        margin: 15px 0 0 0;
+        padding: 0 40px 25px 0;
+        .boton-cuentas {
+            background-color: $co-prin;
+            color: $co;
+            padding: 10px;
+            &:hover {
+                background-color: $bt-co;
+            }
+        }
+    }
+}
