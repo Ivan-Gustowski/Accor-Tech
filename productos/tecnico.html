@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Lato:wght@700;1,400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../imagenes/logo.png">
     <title>Accor Tech - Articulos Tecnologicos Y Accesorios Para Celulares</title>
 </head>
@@ -38,13 +40,13 @@
               </div>
               <div class="col-lg-4 accesoheader">
                   <div>
-                      <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                      <a href="https://wa.me/3512337571?text=Hola,%20tengo%20una%20consulta" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #64113c;"></i></a>
                   </div>
                   <div class="cuenta">
-                      <a href="cuenta.html"><i class="fa-solid fa-user-tie"></i></a>
+                      <a href="https://www.instagram.com/accor.tech/" target="_blank"><i class="fa-brands fa-instagram" style="color: #64113c;"></i></a>
                   </div>
                   <div>
-                      <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                      <a href="mailto:gustowskiivan@gmail.com"><i class="fa-regular fa-envelope" style="color: #64113c;"></i></a>
                   </div>
               </div>
           </div>
@@ -101,7 +103,7 @@
           </div>
         <div class="row servtecnico">
             <div class="col-lg-4">
-                <figure class="figtecnico">
+                <figure data-aos="flip-right" class="figtecnico">
                     <img src="../imagenes/cambiobateria.png" alt="servicio (cambio de bateria)">
                 </figure>
                 <div class="h2tecnico">
@@ -109,7 +111,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <figure class="figtecnico">
+                <figure data-aos="flip-down" class="figtecnico">
                     <img src="../imagenes/cambiomodulo.png" alt="servicio (cambio de modulo)">
                 </figure>
                 <div class="h2tecnico">
@@ -117,7 +119,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <figure class="figtecnico">
+                <figure data-aos="flip-left" class="figtecnico">
                     <img src="../imagenes/cambiootros.png" alt="servicio (otros)">
                 </figure>
                 <div class="h2tecnico">
@@ -127,17 +129,17 @@
         </div>
         <div class="row service">
             <div class="col-lg-5 figtecnicos">
-                <figure>
+                <figure data-aos="fade-right">
                     <img src="../imagenes/plaqueta.jpg" alt="servicio (reparaciones)">
                 </figure>
             </div>
-            <div class="col-lg-5 h2tecnicos">
+            <div data-aos="fade-left" class="col-lg-5 h2tecnicos">
                 <h2>Reparacion de <br> articulos electronicos</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-12 boton-tecnico">
-                <button class="btn boton-servicio" type="submit">Pedir presupuesto</button>
+              <a href="https://wa.me/3512337571?text=Hola,%20quiero%20pedir%20un%20presupuesto" target="_blank"><button class="btn boton-servicio" type="submit">Pedir presupuesto</button></a>
             </div>
         </div>
     </main>
@@ -156,9 +158,9 @@
           </div>
           <div class="col-lg-4 col-sm-6 footer-general">
             <ul class="footer-segundo">
-              <li><a href="#"><i class="fa-brands fa-instagram" style="color: #64113c;"></i> Accor Tech</a></li>
-              <li><a href="#"><i class="fa-brands fa-whatsapp" style="color: #64113c;"></i> Accor Tech</a></li>
-              <li><a href="#"><i class="fa-regular fa-envelope" style="color: #64113c;"></i> accortech@gmail.com</a></li>
+              <li><a href="https://www.instagram.com/accor.tech/" target="_blank"><i class="fa-brands fa-instagram" style="color: #64113c;"></i> Accor Tech</a></li>
+              <li><a href="https://wa.me/3512337571?text=Hola,%20tengo%20una%20consulta" target="_blank""><i class="fa-brands fa-whatsapp" style="color: #64113c;"></i> Accor Tech</a></li>
+              <li><a href="mailto:gustowskiivan@gmail.com"><i class="fa-regular fa-envelope" style="color: #64113c;"></i> accortech@gmail.com</a></li>
             </ul>
           </div>
           <div class="col-lg-4 col-sm-12 footer-general footer-tercero">
@@ -174,6 +176,12 @@
         </div>
       </footer>
 
+      <!-- Bootstrap -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <!-- Animaciones -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

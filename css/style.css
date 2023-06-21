@@ -4,34 +4,24 @@
   align-items: center;
 }
 
-.row-cuenta, .row-comprar .col-comprar .div-b-comprar, .boton-tecnico, .servtecnico .h2tecnico, .section-newslatter .info-newslatter .newslatter, section .vendidos h2, .main-productos, .row-contacto ul, header div p {
+.boton-tecnico, .servtecnico .h2tecnico, .section-newslatter .info-newslatter .newslatter, section .vendidos h2, .main-productos, .row-contacto ul, header div p {
   display: flex;
   justify-content: center;
 }
 
-.row-comprar .col-comprar .div-comprar, footer .footer-general .footer-segundo li a, footer .footer-general .footer-segundo li, footer .footer-general .footer-primero li a, footer .footer-general .footer-primero li, .section-mapa .info-mapa, .row-contacto ul li a {
+footer .footer-general .footer-segundo li a, footer .footer-general .footer-segundo li, footer .footer-general .footer-primero li a, footer .footer-general .footer-primero li, .section-mapa .info-mapa, .row-contacto ul li a {
   display: flex;
   align-items: center;
 }
 
-.cont-cuenta .jj, .service .figtecnicos, .service, .servtecnico .figtecnico, .servtecnico, .section-mapa, .img-informativa, .productos, .marcas, .carrusel-main .trans .cards-wrapper, section .medios-de-pago {
+.service .figtecnicos, .service, .servtecnico .figtecnico, .servtecnico, .section-mapa, .img-informativa, .productos, .marcas, .carrusel-main .trans .cards-wrapper, section .medios-de-pago {
   display: flex;
   justify-content: space-around;
 }
 
-.row-carrito .col-carrito div, .row-carrito .col-carrito, .section-newslatter .info-newslatter, .productos .item .info-product {
+.section-newslatter .info-newslatter, .productos .item .info-product {
   display: flex;
   flex-direction: column;
-}
-
-.row-cuenta .col-cuenta, .row-carrito {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cont-cuenta .boton-cuenta, .row-comprar {
-  display: flex;
-  justify-content: end;
 }
 
 * {
@@ -83,6 +73,9 @@ header .headermedio .accesoheader .cuenta {
 }
 header .headermedio .accesoheader i {
   color: #64113c;
+}
+header .headermedio .accesoheader i:hover {
+  font-weight: bold;
 }
 header .navprincipal {
   border-top: 1px solid lightgray;
@@ -260,10 +253,17 @@ section .vendidos h2 {
 .productos .item .info-product .divider-info {
   margin: 5px;
 }
-.productos .item .info-product .price {
-  padding-inline-start: 10px;
+.productos .item .info-product a {
+  text-decoration: none;
+  color: #64113c;
   font-size: large;
-  font-weight: 900;
+  font-weight: lighter;
+}
+.productos .item .info-product a:hover {
+  font-weight: bold;
+}
+.productos .item .info-product a .price {
+  padding-inline-start: 10px;
 }
 
 .img-informativa {
@@ -375,7 +375,7 @@ footer .footer-general .footer-primero li a {
   text-decoration: none;
 }
 footer .footer-general .footer-primero li a:hover {
-  border-bottom-style: solid;
+  font-weight: bold;
   color: #64113c;
 }
 @media screen and (max-width: 576px) {
@@ -391,6 +391,10 @@ footer .footer-general .footer-segundo li a {
   gap: 10px;
   color: #64113c;
   text-decoration: none;
+}
+footer .footer-general .footer-segundo li a:hover {
+  font-weight: bold;
+  color: #64113c;
 }
 footer .footer-general .footer-segundo li a i {
   font-size: xx-large;
@@ -452,133 +456,6 @@ footer .footer-tercero div h5 {
   padding: 20px 100px 20px 100px;
 }
 .boton-tecnico .boton-servicio:hover {
-  background-color: rgba(100, 17, 60, 0.7176470588);
-}
-
-.fondo-carrito {
-  border-bottom: 2px solid rgba(100, 17, 60, 0.5058823529);
-}
-.fondo-carrito .img-carrito {
-  padding: 10px 0 0 40px;
-}
-.fondo-carrito .img-carrito img {
-  height: 65px;
-  width: 95px;
-}
-
-.row-carrito {
-  border: 1px solid rgba(100, 17, 60, 0.5058823529);
-  margin: 20px;
-  padding: 15px;
-}
-.row-carrito .col-carrito .letra-comprar {
-  font-size: x-large;
-  font-weight: bold;
-}
-@media screen and (max-width: 576px) {
-  .row-carrito .col-carrito .letra-comprar {
-    padding: 15px 0 15px 0;
-    margin-bottom: 0;
-  }
-}
-.row-carrito .col-carrito .div-carrito figure {
-  margin: 0;
-}
-.row-carrito .col-carrito .div-carrito figure img {
-  width: 90px;
-  height: 90px;
-}
-.row-carrito .col-carrito .div-carrito figure p {
-  padding-inline-start: 15px;
-  display: inline;
-}
-.row-carrito .col-carrito div div {
-  display: flex;
-}
-.row-carrito .col-carrito div div .letra-comprar- {
-  font-size: large;
-}
-.row-carrito .col-carrito div p {
-  padding-top: 25px;
-}
-
-.row-comprar .col-comprar {
-  border: 1px solid rgba(100, 17, 60, 0.5058823529);
-  margin: 30px;
-  padding: 20px;
-}
-.row-comprar .col-comprar .div-comprar {
-  justify-content: space-between;
-  font-size: x-large;
-}
-.row-comprar .col-comprar .div-comprar h2 {
-  font-size: x-large;
-}
-.row-comprar .col-comprar .div-b-comprar .boton-comprar {
-  margin: 5px;
-  font-size: large;
-  font-weight: bold;
-  background-color: #64113c;
-  color: #F5F5F5;
-  padding: 10px 100px 10px 100px;
-}
-.row-comprar .col-comprar .div-b-comprar .boton-comprar:hover {
-  background-color: rgba(100, 17, 60, 0.7176470588);
-}
-
-.row-cuenta {
-  background-color: white;
-  margin: 25px 40px 25px 40px;
-  padding: 20px;
-  border: 1px solid rgba(100, 17, 60, 0.2588235294);
-}
-.row-cuenta .col-cuenta a {
-  text-decoration: none;
-  color: #64113c;
-  font-size: larger;
-}
-.row-cuenta .col-cuenta a:hover {
-  font-weight: bold;
-}
-.row-cuenta .col-cuenta .cuenta-activo {
-  border-bottom-style: solid;
-  color: #64113c;
-}
-@media screen and (max-width: 576px) {
-  .row-cuenta .col-cuenta .none-cuenta {
-    display: none;
-  }
-}
-
-.cont-cuenta {
-  background-color: white;
-  border: 1px solid rgba(100, 17, 60, 0.2588235294);
-}
-.cont-cuenta .jj {
-  padding: 15px;
-}
-.cont-cuenta .jj div h2 {
-  font-size: x-large;
-  font-weight: bold;
-}
-.cont-cuenta .jj div h3 {
-  font-size: large;
-}
-@media screen and (max-width: 576px) {
-  .cont-cuenta .jj div .h3ec {
-    margin-bottom: 30px;
-  }
-}
-.cont-cuenta .boton-cuenta {
-  margin: 15px 0 0 0;
-  padding: 0 40px 25px 0;
-}
-.cont-cuenta .boton-cuenta .boton-cuentas {
-  background-color: #64113c;
-  color: white;
-  padding: 10px;
-}
-.cont-cuenta .boton-cuenta .boton-cuentas:hover {
   background-color: rgba(100, 17, 60, 0.7176470588);
 }
 

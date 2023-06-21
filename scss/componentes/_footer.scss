@@ -17,7 +17,7 @@ footer {
                     color: $co-prin;
                     text-decoration: none;
                     &:hover { 
-                        border-bottom-style: solid;
+                        font-weight: bold;
                         color: $co-prin; 
                     }
                 }
@@ -36,8 +36,12 @@ footer {
                     gap: 10px;
                     color: $co-prin;
                     text-decoration: none;
+                    &:hover { 
+                        font-weight: bold;
+                        color: $co-prin; 
+                    }
                     i {
-                        font-size: xx-large;
+                        font-size: xx-large;                   
                     }
                 }
             }

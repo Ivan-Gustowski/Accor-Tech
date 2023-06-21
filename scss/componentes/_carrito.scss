@@ -1,82 +1,82 @@
-.fondo-carrito {
-    border-bottom: 2px solid $bor-co;
-    .img-carrito {
-        padding: 10px 0 0 40px;
-        img {
-            height: 65px;
-            width: 95px;
-        }
-    }
-}
+// .fondo-carrito {
+//     border-bottom: 2px solid $bor-co;
+//     .img-carrito {
+//         padding: 10px 0 0 40px;
+//         img {
+//             height: 65px;
+//             width: 95px;
+//         }
+//     }
+// }
 
-.row-carrito {
-    border: 1px solid $bor-co;
-    margin: 20px;
-    padding: 15px;
-    @extend %flexseis;
-    .col-carrito {
-        @extend %flexcinco;
-        .letra-comprar {
-            font-size: x-large;
-            font-weight: bold;
-            @media screen and (max-width: 576px) {
-                padding: 15px 0 15px 0;
-                margin-bottom: 0;
-            }
-        }
-        .div-carrito figure {
-            margin: 0;
-            img {
-                width: 90px;
-                height: 90px;
-            }
-            p {
-                padding-inline-start: 15px;
-                display: inline;
-            }    
-        }
-        div {
-            @extend %flexcinco;
-            div {
-                display: flex;
-                .letra-comprar- {
-                    font-size: large;
-                }
-            }
-            p {
-                padding-top: 25px;
-            }
-        }
-    }
-}
+// .row-carrito {
+//     border: 1px solid $bor-co;
+//     margin: 20px;
+//     padding: 15px;
+//     @extend %flexseis;
+//     .col-carrito {
+//         @extend %flexcinco;
+//         .letra-comprar {
+//             font-size: x-large;
+//             font-weight: bold;
+//             @media screen and (max-width: 576px) {
+//                 padding: 15px 0 15px 0;
+//                 margin-bottom: 0;
+//             }
+//         }
+//         .div-carrito figure {
+//             margin: 0;
+//             img {
+//                 width: 90px;
+//                 height: 90px;
+//             }
+//             p {
+//                 padding-inline-start: 15px;
+//                 display: inline;
+//             }    
+//         }
+//         div {
+//             @extend %flexcinco;
+//             div {
+//                 display: flex;
+//                 .letra-comprar- {
+//                     font-size: large;
+//                 }
+//             }
+//             p {
+//                 padding-top: 25px;
+//             }
+//         }
+//     }
+// }
 
-.row-comprar {
-    @extend %flexsiete;
-    .col-comprar {
-        border: 1px solid $bor-co;
-        margin: 30px;
-        padding: 20px;
-        .div-comprar {
-            @extend %flextres;
-            justify-content: space-between;
-            font-size: x-large;
-            h2 {
-                font-size: x-large;
-            }
-        }
-        .div-b-comprar {
-            @extend %flexdos;
-            .boton-comprar {
-                margin: 5px;
-                font-size: large;
-                font-weight: bold;
-                background-color: $co-prin;
-                color: $bc-co;
-                padding: 10px 100px 10px 100px;
-                &:hover {
-                    background-color: $bt-co;
-                }
-            }
-        }
-    }
-}
+// .row-comprar {
+//     @extend %flexsiete;
+//     .col-comprar {
+//         border: 1px solid $bor-co;
+//         margin: 30px;
+//         padding: 20px;
+//         .div-comprar {
+//             @extend %flextres;
+//             justify-content: space-between;
+//             font-size: x-large;
+//             h2 {
+//                 font-size: x-large;
+//             }
+//         }
+//         .div-b-comprar {
+//             @extend %flexdos;
+//             .boton-comprar {
+//                 margin: 5px;
+//                 font-size: large;
+//                 font-weight: bold;
+//                 background-color: $co-prin;
+//                 color: $bc-co;
+//                 padding: 10px 100px 10px 100px;
+//                 &:hover {
+//                     background-color: $bt-co;
+//                 }
+//             }
+//         }
+//     }
+// }

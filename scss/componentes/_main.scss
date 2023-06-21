@@ -170,11 +170,18 @@ section {
             .divider-info {
                 margin: 5px;
             }
-            .price{
-                padding-inline-start: 10px;
+            a {
+                text-decoration: none;
+                color: $co-prin;
                 font-size: large;
-                font-weight: 900;
-            }
+                font-weight: lighter;
+                &:hover { 
+                    font-weight: bold; 
+                }
+                .price{
+                    padding-inline-start: 10px;
+                }
+            } 
         }
     }
 }
